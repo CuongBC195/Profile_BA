@@ -12,35 +12,44 @@ export default function About() {
 
   const experiences = [
     {
-      title: "Senior Full-Stack Developer",
-      company: "Tech Company Inc.",
-      period: "2022 - Present",
-      description: "Leading development of scalable web applications using React, Node.js, and cloud technologies.",
-      technologies: ["React", "Next.js", "Node.js", "AWS", "TypeScript"]
+      title: "Business Analyst",
+      company: "Health Management System - HMS",
+      period: "May 2025 - Sep 2025",
+      description: "Directed the development team, set project vision, and established detailed roadmaps and milestones. Prepared comprehensive documentation (BRD, SRS) and defined business flows, user journeys, and system logic.",
+      technologies: ["ASP.NET", "Business Analysis", "API Development", "System Integration"]
     },
     {
-      title: "Full-Stack Developer",
-      company: "Digital Solutions Ltd.",
-      period: "2020 - 2022",
-      description: "Developed and maintained multiple client projects, focusing on performance and user experience.",
-      technologies: ["Vue.js", "Laravel", "MySQL", "Docker"]
+      title: "Business Analyst",
+      company: "Mom and Baby - MAB",
+      period: "Sep 2024 - Dec 2024",
+      description: "Drove the planning and ideation for a multi-store e-commerce platform targeting the mom-and-baby retail sector. Defined product workflows, customer journeys, and store management logic.",
+      technologies: ["Java Jakarta Servlet", "E-commerce", "UI/UX Design", "Product Management"]
     },
     {
-      title: "Frontend Developer",
-      company: "StartupX",
-      period: "2019 - 2020",
-      description: "Built responsive web interfaces and improved application performance by 40%.",
-      technologies: ["React", "JavaScript", "Sass", "Webpack"]
+      title: "Business Analyst Intern",
+      company: "UTA Solution",
+      period: "Jun 2024 - Aug 2024",
+      description: "Conducted customer research and gathered requirements to support early-stage project planning and solution design. Collaborated with stakeholders to understand business objectives.",
+      technologies: ["Requirements Analysis", "Stakeholder Management", "Agile", "Documentation"]
+    },
+    {
+      title: "Business Analyst",
+      company: "Find Jobs 3Do - FJ3Do",
+      period: "Jun 2024 - May 2024",
+      description: "Planned and defined the structure of a recruitment platform connecting job seekers and employers. Designed system workflows, user journeys, and data models.",
+      technologies: ["Java Jakarta Servlet", "System Design", "User Experience", "Platform Architecture"]
     }
   ]
 
   const achievements = [
-    "🏆 Built 50+ successful web applications",
-    "🚀 Improved application performance by 60% on average",
-    "👥 Led a team of 5 developers",
-    "📱 Expertise in responsive design and mobile-first approach",
-    "☁️ Cloud architecture and deployment specialist",
-    "🔧 Strong problem-solving and debugging skills"
+    "📋 Expert in requirements analysis and business documentation (BRD, SRS, Use Case, User Flow)",
+    "� Strong in bridging communication between clients, development teams, and stakeholders",
+    "🛠️ Proficient in business analysis tools: Postman, Figma, Balsamiq, Canva, Draw.io, Lucidchart",
+    "� Backend development experience with Java and ASP.NET API Development",
+    "🎯 Skilled in creating process models and system logic diagrams",
+    "🚀 Experience in e-commerce and recruitment platform development",
+    "🏗️ Strong foundation in software engineering principles and project management",
+    "� Certified in Project Management Principles and Practices, User Experience Research and Design"
   ]
 
   return (
@@ -58,7 +67,7 @@ export default function About() {
               About Me
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-200">
-              Passionate developer with a mission to create amazing digital experiences
+              Business Analyst (IT) bridging technology and business needs in Can Tho City
             </p>
           </motion.div>
         </div>
@@ -80,22 +89,22 @@ export default function About() {
               >
                 <h2 className="text-3xl font-bold mb-6 text-gradient">My Journey</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Hello! I'm a passionate full-stack developer with over 5 years of experience 
-                  in creating digital solutions that make a difference. My journey in technology 
-                  started during my computer science studies, where I discovered my love for 
-                  problem-solving and building innovative applications.
+                  Hello! I'm Bui Chi Cuong, a Business Analyst (IT) with a solid IT background, 
+                  skilled in requirements analysis, business documentation (BRD, SRS, Use Case, User Flow), 
+                  and bridging communication between clients, development teams, and stakeholders. 
+                  Currently pursuing my Bachelor of Information Technology at FPT University Campus Can Tho.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Throughout my career, I've had the privilege of working with diverse teams 
-                  and clients, from early-stage startups to established enterprises. This 
-                  experience has taught me the importance of not just writing clean code, 
-                  but also understanding business needs and user perspectives.
+                  Throughout my career journey, I've had the privilege of working on diverse projects 
+                  from healthcare management systems to e-commerce platforms and recruitment solutions. 
+                  This experience has taught me the importance of not just understanding technical 
+                  requirements, but also translating business needs into actionable development plans.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   I believe in continuous learning and staying up-to-date with the latest 
-                  technologies. Whether it's exploring new frameworks, attending tech 
-                  conferences, or contributing to open-source projects, I'm always looking 
-                  for ways to grow and improve my skills.
+                  business analysis methodologies and development technologies. My technical skills 
+                  in Java and ASP.NET complement my analytical abilities, allowing me to better 
+                  communicate with development teams and ensure project success.
                 </p>
               </motion.div>
 
@@ -161,15 +170,19 @@ export default function About() {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Location</span>
-                    <span>Vietnam</span>
+                    <span>Can Tho City, Vietnam</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Experience</span>
-                    <span>5+ Years</span>
+                    <span>2+ Years</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Focus</span>
-                    <span>Full-Stack</span>
+                    <span>Business Analysis</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Education</span>
+                    <span>Bachelor IT (2021-2025)</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Availability</span>

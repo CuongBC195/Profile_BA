@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, CheckCircle } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, CheckCircle, Facebook } from 'lucide-react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
@@ -29,33 +29,43 @@ export default function Contact() {
   })
 
   const onSubmit = async (data: ContactForm) => {
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    console.log('Form submitted:', data)
-    setIsSubmitted(true)
-    reset()
-    
-    // Reset success message after 5 seconds
-    setTimeout(() => setIsSubmitted(false), 5000)
+    try {
+      // Create mailto link with form data - only show the message content
+      const subject = encodeURIComponent(data.subject)
+      const body = encodeURIComponent(data.message)
+      const mailtoLink = `mailto:cuongbc.work@gmail.com?subject=${subject}&body=${body}`
+      
+      // Open default email client
+      window.location.href = mailtoLink
+      
+      // Show success message
+      setIsSubmitted(true)
+      reset()
+      
+      // Reset success message after 5 seconds
+      setTimeout(() => setIsSubmitted(false), 5000)
+    } catch (error) {
+      console.error('Error sending email:', error)
+    }
   }
 
   const contactInfo = [
     {
       icon: Mail,
       label: 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com'
+      value: 'cuongbc.work@gmail.com',
+      href: 'mailto:cuongbc.work@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+84 123 456 789',
-      href: 'tel:+84123456789'
+      value: '+84 774889191',
+      href: 'tel:+84774889191'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Ho Chi Minh City, Vietnam',
+      value: 'Can Tho City, Vietnam',
       href: 'https://maps.google.com'
     }
   ]
@@ -64,20 +74,14 @@ export default function Contact() {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/CuongBC195',
       color: 'hover:text-gray-700'
     },
     {
-      icon: Linkedin,
-      label: 'LinkedIn',
-      href: 'https://linkedin.com/in/yourusername',
+      icon: Facebook,
+      label: 'Facebook',
+      href: 'https://www.facebook.com/chicuong.bui.03',
       color: 'hover:text-blue-600'
-    },
-    {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com/yourusername',
-      color: 'hover:text-blue-400'
     }
   ]
 
@@ -96,7 +100,7 @@ export default function Contact() {
               Get In Touch
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-200">
-              Let's discuss your next project or just say hello
+              Let's discuss your business analysis needs or collaboration opportunities
             </p>
           </motion.div>
         </div>
@@ -119,8 +123,8 @@ export default function Contact() {
                   Let's Start a Conversation
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I'm always interested in new opportunities, collaborations, or just a friendly chat about technology. 
-                  Whether you have a project in mind, need consultation, or want to discuss the latest in web development, 
+                  I'm always interested in new opportunities, collaborations, or just a friendly chat about business analysis and technology. 
+                  Whether you have a project in mind, need consultation on requirements analysis, or want to discuss business process optimization, 
                   I'd love to hear from you.
                 </p>
               </div>
@@ -187,11 +191,11 @@ export default function Contact() {
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                   <span className="font-medium text-green-700 dark:text-green-400">
-                    Available for new projects
+                    Available for business analysis projects
                   </span>
                 </div>
                 <p className="text-sm text-green-600 dark:text-green-300 mt-1">
-                  Currently accepting new freelance and full-time opportunities
+                  Currently accepting new freelance and full-time business analyst opportunities
                 </p>
               </motion.div>
             </motion.div>
@@ -215,7 +219,7 @@ export default function Contact() {
                 >
                   <CheckCircle size={20} className="text-green-600 dark:text-green-400" />
                   <span className="text-green-700 dark:text-green-400 font-medium">
-                    Message sent successfully! I'll get back to you soon.
+                    Email client opened! Please send the email to complete your message.
                   </span>
                 </motion.div>
               )}
@@ -330,13 +334,13 @@ export default function Contact() {
             className="text-white"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Start Your Project?
+              Ready to Start Your Business Analysis Project?
             </h2>
             <p className="text-xl mb-8 text-gray-200">
-              Let's turn your ideas into reality with modern web technologies
+              Let's transform your business requirements into actionable development plans
             </p>
             <motion.a
-              href="mailto:your.email@example.com"
+              href="mailto:cuongbc.work@gmail.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center space-x-2 px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transition-colors"

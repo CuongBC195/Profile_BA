@@ -9,115 +9,61 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with Next.js, featuring real-time inventory management, payment integration, and admin dashboard.",
+      title: "Health Management System (HMS)",
+      description: "Comprehensive healthcare management system with patient management, appointment scheduling, and medical records. Led development team and established detailed roadmaps and milestones.",
       image: "/api/placeholder/600/400",
-      technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Stripe", "Tailwind CSS"],
-      category: "Full-Stack",
+      technologies: ["ASP.NET", "API Development", "System Integration", "Healthcare"],
+      category: "Business Analysis",
       status: "Completed",
-      date: "2024-01",
-      github: "https://github.com/yourusername/ecommerce-platform",
-      demo: "https://your-ecommerce-demo.vercel.app",
+      date: "2025-05",
+      github: "#",
+      demo: "https://drive.google.com/drive/folders/1UqghZoeAkJJVve4epWOXtrhpxjD6IyXw?usp=drive_link",
       featured: true,
       stats: {
-        stars: 45,
-        forks: 12,
-        commits: 156
+        stars: 0,
+        forks: 0,
+        commits: 0
       }
     },
     {
       id: 2,
-      title: "Real-Time Chat Application",
-      description: "A modern chat application with real-time messaging, file sharing, and video calls using WebRTC and Socket.io.",
+      title: "Mom and Baby E-commerce Platform (MAB)",
+      description: "Multi-store e-commerce platform targeting the mom-and-baby retail sector. Researched user behaviors and market trends to enhance customer experience and boost engagement.",
       image: "/api/placeholder/600/400",
-      technologies: ["React", "Node.js", "Socket.io", "WebRTC", "MongoDB", "Express"],
-      category: "Full-Stack",
+      technologies: ["Java Jakarta Servlet", "E-commerce", "UI/UX Design", "Market Research"],
+      category: "Business Analysis",
       status: "Completed",
-      date: "2023-11",
-      github: "https://github.com/yourusername/chat-app",
-      demo: "https://your-chat-app.vercel.app",
+      date: "2024-09",
+      github: "#",
+      demo: "https://drive.google.com/drive/folders/1NhwHYROQCG1931IIwczhnyMU0rje01Gy?usp=drive_link",
       featured: true,
       stats: {
-        stars: 32,
-        forks: 8,
-        commits: 89
+        stars: 0,
+        forks: 0,
+        commits: 0
       }
     },
     {
       id: 3,
-      title: "Task Management Dashboard",
-      description: "A comprehensive project management tool with drag-and-drop functionality, team collaboration, and advanced analytics.",
+      title: "Find Jobs 3Do Recruitment Platform (FJ3Do)",
+      description: "Recruitment platform connecting job seekers and employers. Designed system workflows, user journeys, and data models to ensure smooth interaction between both sides.",
       image: "/api/placeholder/600/400",
-      technologies: ["Vue.js", "Laravel", "MySQL", "Redis", "Docker"],
-      category: "Frontend",
-      status: "In Progress",
-      date: "2024-02",
-      github: "https://github.com/yourusername/task-manager",
-      demo: "https://your-task-manager.vercel.app",
-      featured: false,
-      stats: {
-        stars: 18,
-        forks: 5,
-        commits: 67
-      }
-    },
-    {
-      id: 4,
-      title: "Weather Analytics API",
-      description: "RESTful API providing detailed weather analytics and forecasts with machine learning predictions.",
-      image: "/api/placeholder/600/400",
-      technologies: ["Python", "FastAPI", "PostgreSQL", "Docker", "ML Models"],
-      category: "Backend",
+      technologies: ["Java Jakarta Servlet", "System Design", "User Experience", "Platform Architecture"],
+      category: "Business Analysis",
       status: "Completed",
-      date: "2023-09",
-      github: "https://github.com/yourusername/weather-api",
-      demo: "https://your-weather-api.herokuapp.com/docs",
+      date: "2024-06",
+      github: "#",
+      demo: "https://drive.google.com/drive/folders/1f2_IqbdBIkalpLwUGT-NBjBHbSPbFM0W?usp=drive_link",
       featured: false,
       stats: {
-        stars: 26,
-        forks: 7,
-        commits: 42
-      }
-    },
-    {
-      id: 5,
-      title: "Portfolio Website Template",
-      description: "A modern, responsive portfolio template built with Next.js and Framer Motion, featuring dark mode and smooth animations.",
-      image: "/api/placeholder/600/400",
-      technologies: ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript"],
-      category: "Frontend",
-      status: "Completed",
-      date: "2023-12",
-      github: "https://github.com/yourusername/portfolio-template",
-      demo: "https://portfolio-template-demo.vercel.app",
-      featured: false,
-      stats: {
-        stars: 67,
-        forks: 23,
-        commits: 34
-      }
-    },
-    {
-      id: 6,
-      title: "Cryptocurrency Tracker",
-      description: "Real-time cryptocurrency price tracker with portfolio management, price alerts, and market analysis.",
-      image: "/api/placeholder/600/400",
-      technologies: ["React Native", "Redux", "Node.js", "CoinGecko API"],
-      category: "Mobile",
-      status: "Completed",
-      date: "2023-10",
-      github: "https://github.com/yourusername/crypto-tracker",
-      demo: "https://crypto-tracker-demo.vercel.app",
-      featured: false,
-      stats: {
-        stars: 41,
-        forks: 15,
-        commits: 78
+        stars: 0,
+        forks: 0,
+        commits: 0
       }
     }
   ]
 
-  const categories = ['All', 'Full-Stack', 'Frontend', 'Backend', 'Mobile']
+  const categories = ['All', 'Business Analysis', 'System Design', 'Requirements Analysis']
   const [selectedCategory, setSelectedCategory] = useState('All')
 
   const filteredProjects = projects.filter(project => 

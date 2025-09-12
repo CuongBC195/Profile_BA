@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from 'framer-motion'
-import { ArrowDown, Github, Linkedin, Mail, Code, Database, Server } from 'lucide-react'
+import { ArrowDown, Github, Linkedin, Mail, Code, Database, Server, Facebook } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Home() {
@@ -20,12 +20,12 @@ export default function Home() {
   }
 
   const skills = [
-    { name: 'React', icon: Code, level: 90 },
-    { name: 'Node.js', icon: Server, level: 85 },
-    { name: 'TypeScript', icon: Code, level: 88 },
-    { name: 'Database', icon: Database, level: 82 },
-    { name: 'Next.js', icon: Code, level: 87 },
-    { name: 'Python', icon: Code, level: 75 },
+    { name: 'Java', icon: Code, level: 88 },
+    { name: 'ASP.NET', icon: Server, level: 85 },
+    { name: 'Business Analysis', icon: Database, level: 90 },
+    { name: 'API Testing', icon: Code, level: 85 },
+    { name: 'Figma', icon: Code, level: 80 },
+    { name: 'Draw.io', icon: Database, level: 82 },
   ]
 
   return (
@@ -74,15 +74,16 @@ export default function Home() {
 
             <motion.div variants={fadeInUp}>
               <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
-                Full-Stack Developer & Technology Enthusiast
+                Business Analyst (IT) & Backend Developer
               </p>
             </motion.div>
 
             <motion.div variants={fadeInUp}>
               <p className="text-lg md:text-xl mb-12 text-gray-300 max-w-4xl mx-auto leading-relaxed">
-                Passionate about creating innovative solutions with modern technologies. 
-                Specializing in React, Next.js, Node.js, and cloud technologies to build 
-                scalable applications that make a difference.
+                Business Analyst with a solid IT background, skilled in requirements analysis, 
+                business documentation and bridging communication between clients, development teams, 
+                and stakeholders. Experienced in Java, ASP.NET API development, and proficient in 
+                tools like Draw.io, Figma to support product development.
               </p>
             </motion.div>
 
@@ -122,9 +123,9 @@ export default function Home() {
               className="flex justify-center space-x-6 pt-8"
             >
               {[
-                { Icon: Github, href: "https://github.com", label: "GitHub" },
-                { Icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-                { Icon: Mail, href: "mailto:your.email@example.com", label: "Email" },
+                { Icon: Github, href: "https://github.com/CuongBC195", label: "GitHub" },
+                { Icon: Facebook, href: "https://www.facebook.com/chicuong.bui.03", label: "Facebook" },
+                { Icon: Mail, href: "mailto:cuongbc.work@gmail.com", label: "Email" },
               ].map(({ Icon, href, label }) => (
                 <motion.a
                   key={label}
@@ -217,14 +218,14 @@ export default function Home() {
                 About Me
               </h2>
               <p className="text-lg mb-6 text-gray-200 leading-relaxed">
-                I'm a passionate full-stack developer with over 5 years of experience 
-                in creating digital solutions. I love turning complex problems into 
-                simple, beautiful, and intuitive solutions.
+                I'm a Business Analyst (IT) with a solid technical background and 
+                2+ years of experience in bridging business requirements with technical solutions. 
+                I specialize in requirements analysis, business documentation, and stakeholder communication.
               </p>
               <p className="text-lg mb-8 text-gray-200 leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, 
-                contributing to open-source projects, or sharing my knowledge 
-                through technical blog posts.
+                Currently pursuing my Bachelor of Information Technology at FPT University Can Tho, 
+                I combine academic knowledge with practical experience in Java, ASP.NET development, 
+                and business analysis tools like Figma, Draw.io, and Postman.
               </p>
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -251,19 +252,19 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-white">Experience</span>
-                    <span className="text-slate-300 font-semibold">5+ Years</span>
+                    <span className="text-slate-300 font-semibold">2+ Years</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-white">Projects Completed</span>
-                    <span className="text-slate-300 font-semibold">50+</span>
+                    <span className="text-slate-300 font-semibold">3</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-white">Technologies</span>
-                    <span className="text-slate-300 font-semibold">15+</span>
+                    <span className="text-white">Business Tools</span>
+                    <span className="text-slate-300 font-semibold">8+</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-white">Happy Clients</span>
-                    <span className="text-slate-300 font-semibold">30+</span>
+                    <span className="text-white">Education</span>
+                    <span className="text-slate-300 font-semibold">Bachelor IT</span>
                   </div>
                 </div>
               </div>
