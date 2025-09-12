@@ -40,7 +40,7 @@ export function Navbar() {
               whileTap={{ scale: 0.95 }}
             >
               <Link href="/" className="text-2xl font-bold text-gradient">
-                Portfolio
+                Profile
               </Link>
             </motion.div>
 

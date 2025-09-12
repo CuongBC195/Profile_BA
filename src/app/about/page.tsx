@@ -174,7 +174,7 @@ export default function About() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Experience</span>
-                    <span>2+ Years</span>
+                    <span>1 year+</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Focus</span>

@@ -219,7 +219,7 @@ export default function Home() {
               </h2>
               <p className="text-lg mb-6 text-gray-200 leading-relaxed">
                 I'm a Business Analyst (IT) with a solid technical background and 
-                2+ years of experience in bridging business requirements with technical solutions. 
+                1+ year of experience in bridging business requirements with technical solutions. 
                 I specialize in requirements analysis, business documentation, and stakeholder communication.
               </p>
               <p className="text-lg mb-8 text-gray-200 leading-relaxed">
@@ -252,11 +252,11 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-white">Experience</span>
-                    <span className="text-slate-300 font-semibold">2+ Years</span>
+                    <span className="text-slate-300 font-semibold">1 year+</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-white">Projects Completed</span>
-                    <span className="text-slate-300 font-semibold">3</span>
+                    <span className="text-slate-300 font-semibold">8+</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-white">Business Tools</span>
