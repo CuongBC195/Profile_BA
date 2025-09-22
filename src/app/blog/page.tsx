@@ -177,7 +177,7 @@ export default function Blog() {
                     {post.title}
                   </h2>
 
-                  <p className="text-muted-foreground mb-4 line-clamp-3">
+                  <p className="text-muted-foreground mb-4 line-clamp-3 text-justify">
                     {post.excerpt}
                   </p>
 

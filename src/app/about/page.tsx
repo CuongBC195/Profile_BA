@@ -88,19 +88,19 @@ export default function About() {
                 className="prose prose-lg dark:prose-invert max-w-none"
               >
                 <h2 className="text-3xl font-bold mb-6 text-gradient">My Journey</h2>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-justify">
                   Hello! I'm Bui Chi Cuong, a Business Analyst (IT) with a solid IT background, 
                   skilled in requirements analysis, business documentation (BRD, SRS, Use Case, User Flow), 
                   and bridging communication between clients, development teams, and stakeholders. 
                   Currently pursuing my Bachelor of Information Technology at FPT University Campus Can Tho.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-justify">
                   Throughout my career journey, I've had the privilege of working on diverse projects 
                   from healthcare management systems to e-commerce platforms and recruitment solutions. 
                   This experience has taught me the importance of not just understanding technical 
                   requirements, but also translating business needs into actionable development plans.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-justify">
                   I believe in continuous learning and staying up-to-date with the latest 
                   business analysis methodologies and development technologies. My technical skills 
                   in Java and ASP.NET complement my analytical abilities, allowing me to better 
@@ -136,7 +136,7 @@ export default function About() {
                           {exp.period}
                         </div>
                       </div>
-                      <p className="text-muted-foreground mb-4">{exp.description}</p>
+                      <p className="text-muted-foreground mb-4 text-justify">{exp.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech) => (
                           <span

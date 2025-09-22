@@ -79,7 +79,7 @@ export default function Home() {
             </motion.div>
 
             <motion.div variants={fadeInUp}>
-              <p className="text-lg md:text-xl mb-12 text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-xl mb-12 text-gray-300 max-w-4xl mx-auto leading-relaxed text-justify">
                 Business Analyst with a solid IT background, skilled in requirements analysis, 
                 business documentation and bridging communication between clients, development teams, 
                 and stakeholders. Experienced in Java, ASP.NET API development, and proficient in 
@@ -167,7 +167,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
               Technical Skills
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-justify">
               Technologies and tools I use to bring ideas to life
             </p>
           </motion.div>

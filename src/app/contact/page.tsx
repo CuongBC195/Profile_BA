@@ -122,7 +122,7 @@ export default function Contact() {
                 <h2 className="text-3xl font-bold mb-6 text-gradient">
                   Let's Start a Conversation
                 </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-lg text-muted-foreground leading-relaxed text-justify">
                   I'm always interested in new opportunities, collaborations, or just a friendly chat about business analysis and technology. 
                   Whether you have a project in mind, need consultation on requirements analysis, or want to discuss business process optimization, 
                   I'd love to hear from you.
